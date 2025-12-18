@@ -1,4 +1,3 @@
-// language: cpp
 #ifndef OOP_INTREBARE_HPP
 #define OOP_INTREBARE_HPP
 
@@ -10,11 +9,10 @@ class Intrebare : public Nod {
 public:
     Intrebare(std::string text,
               std::unique_ptr<Nod> da = nullptr,
-              std::unique_ptr<Nod> nu = nullptr);
+              std::unique_ptr<Nod> nu = nullptr); // ✅ Apel constructor bază implicit
 
-    // rule of five not needed beyond default since we use unique_ptr
     bool esteIntrebare() const override { return true; }
-    const std::string& getText() const override { return text_; }
+    const std::string& getText() const override { return text_; } // ✅ Funcție virtuală specifică
 
     Nod* getDa() const noexcept { return da_.get(); }
     Nod* getNu() const noexcept { return nu_.get(); }
@@ -23,7 +21,6 @@ public:
     void setNu(std::unique_ptr<Nod> n) { nu_ = std::move(n); }
 
     std::unique_ptr<Nod> clone() const override;
-    nlohmann::json toJson() const override;
 
 private:
     std::string text_;

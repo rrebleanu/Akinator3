@@ -1,4 +1,3 @@
-// language: cpp
 #include "Intrebare.hpp"
 #include <utility>
 
@@ -9,12 +8,4 @@ std::unique_ptr<Nod> Intrebare::clone() const {
     std::unique_ptr<Nod> da_clone = da_ ? da_->clone() : nullptr;
     std::unique_ptr<Nod> nu_clone = nu_ ? nu_->clone() : nullptr;
     return std::make_unique<Intrebare>(text_, std::move(da_clone), std::move(nu_clone));
-}
-
-nlohmann::json Intrebare::toJson() const {
-    nlohmann::json j;
-    j["intrebare"] = text_;
-    j["da"] = da_ ? da_->toJson() : nullptr;
-    j["nu"] = nu_ ? nu_->toJson() : nullptr;
-    return j;
 }
