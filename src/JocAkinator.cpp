@@ -1,4 +1,4 @@
-#include "JocAkinator.hpp"
+#include "../srh/JocAkinator.hpp"
 #include <iostream>
 
 void JocAkinator::ruleazaSilentios(std::istream& is, std::ostream& os) {

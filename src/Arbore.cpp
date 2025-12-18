@@ -1,11 +1,11 @@
 // Arbore.cpp
 // language: cpp
-#include "Arbore.hpp"
-#include "Intrebare.hpp"
-#include "RaspunsFinal.hpp"
-#include "RaspunsDetaliat.hpp"
-#include "EroareFisier.hpp" // Rămân incluse pentru exceptii
-#include "EroareFormat.hpp" // Rămân incluse pentru exceptii
+#include "../srh/Arbore.hpp"
+#include "../srh/Intrebare.hpp"
+#include "../srh/RaspunsFinal.hpp"
+#include "../srh/RaspunsDetaliat.hpp"
+#include "../srh/EroareFisier.hpp"
+#include "../srh/EroareFormat.hpp"
 #include <fstream>
 #include <stdexcept>
 // 🛑 LINIE ȘTEARSĂ: #include <nlohmann/json.hpp>

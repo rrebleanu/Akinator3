@@ -1,4 +1,4 @@
-#include "Intrebare.hpp"
+#include "../srh/Intrebare.hpp"
 #include <utility>
 
 Intrebare::Intrebare(std::string text, std::unique_ptr<Nod> da, std::unique_ptr<Nod> nu)

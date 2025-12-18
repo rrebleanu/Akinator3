@@ -4,12 +4,12 @@
 #include <string>
 
 // CORECȚIE: S-a schimbat extensia din .h în .hpp pentru toate headerele
-#include "JocAkinator.hpp"
-#include "Intrebare.hpp"
+#include "srh/JocAkinator.hpp"
+#include "srh/Intrebare.hpp"
 // Presupunând că ai o clasă comună (EroareAkinator) sau include-le specifice:
-#include "EroareFisier.hpp"
-#include "EroareFormat.hpp"
-#include "EroareDateInvalide.hpp"
+#include "srh/EroareFisier.hpp"
+#include "srh/EroareFormat.hpp"
+#include "srh/EroareDateInvalide.hpp"
 
 // Folosim constantele pentru I/O
 const std::string FISIER_INTRARE = "tastatura.txt";
